@@ -31,7 +31,6 @@ myForm.addEventListener('submit',(e)=>{
 
 
     }else if(recuperer.length > 0){
-        console.log(recuperer)
 
         for(let i of recuperer){
 
@@ -72,7 +71,19 @@ myForm.addEventListener('submit',(e)=>{
 
                 localStorage.setItem('user', JSON.stringify(recuperer));
                 
-                alert('connexion valide')
+                let reussi = document.querySelector('.inscription-reussi');
+                let btn = document.querySelector('.inscription-reussi button');
+                
+                reussi.style.display = 'flex';
+                
+                btn.addEventListener('click', ()=>{
+                    reussi.style.display = 'none';
+                })
+                
+                setTimeout(() => {
+                    reussi.style.display = 'none';
+                }, 5000);//au bout de 5 seocnde le message vas disparaitre
+    
                 
                 passError.style.display = 'none';
                 mailError.style.display = 'none';
@@ -83,37 +94,8 @@ myForm.addEventListener('submit',(e)=>{
                 return;
             }
             
-            
-            
         }
-
        
     }
 
-
-
-
-    // let reussi = document.querySelector('.inscription-reussi');
-    // let btn = document.querySelector('.inscription-reussi button');
-    
-    // reussi.style.display = 'flex';
-    
-    // btn.addEventListener('click', ()=>{
-    //     reussi.style.display = 'none';
-    // })
-    
-    // setTimeout(() => {
-    //     reussi.style.display = 'none';
-    // }, 5000);//au bout de 5 seocnde le message vas disparaitre
-    
-   
-    // passError.style.display = 'none';
-
-})
-
-
-
-
-
-
-
+});
