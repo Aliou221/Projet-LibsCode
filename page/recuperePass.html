@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/connexion.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Recupération de mot de passe</title>
+</head>
+<body>
+
+    <div class="loading">
+        <div class="load">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#">
+                    <div class="logo">
+                        <img src="../img/logo.png" alt="Mon logo">
+                    </div>
+                </a>
+
+                <div class="navlinks">
+                    <a href="#">Cours</a>
+                    <a href="#">Evenements</a>
+                    <a href="#">A propos</a>
+                    <a href="#">CGU</a>
+                    <a href="connexion.html" target="_blank">Connexion</a>
+                    <a href="#" class="btn-inscription">Inscription</a>
+                </div>
+
+                <div class="nav-menue">
+                    <span class="bars bar-haut"></span>
+                    <span class="bars bar-mi"></span>
+                    <span class="bars bar-bas"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+
+       <div class="inscription">
+
+        <div class="inscription-reussi">
+            <h2>Recupération de mot de passe valide ✅<br>Vous pouvez connecter maintenant</h2>
+            <button>X</button>
+            <a href="connexion.html" target="_blank">Connexion</a>
+        </div>
+
+        <form id="form-recuperation">
+            <h2>Recupération mot de passe</h2>
+
+            <div class="myInputs">
+                <input type="email" name="mail" id="mail" placeholder="Entrez votre email" required>
+                <p class="messemail" style="display: none;"></p>
+                <input type="password" name="pass" id="passChange" placeholder="Entrez votre nouveau mot de passe" required>
+                <input type="password" name="passConfirm" id="passChangeConfirm" placeholder="Confirmez votre mot de passe" required>
+                <p class="messpass" style="display: none;"></p>
+            </div>
+
+            <div class="div-passe">
+                <p class="links">
+                    <a href="connexion.html" target="_blank">Vous avez un compte ? Connectez</a>
+                </p>
+            </div>
+            <div class="mesBtns">
+                <input type="submit" value="Valider">
+            </div>
+        </form>
+       </div>
+    </div>
+
+
+    <!-- <script src="../JS/incription.js"></script> -->
+    
+    <script src="../JS/menu.js"></script>
+    <script src="../JS/recupre.js"></script>
+    <script src="../JS/load.js"></script>
+</body>
+</html>

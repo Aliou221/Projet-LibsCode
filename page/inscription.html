@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/connexion.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Page d'inscription</title>
+</head>
+<body>
+
+    <div class="loading">
+        <div class="load">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#">
+                    <div class="logo">
+                        <img src="../img/logo.png" alt="Mon logo">
+                    </div>
+                </a>
+
+                <div class="navlinks">
+                    <a href="#">Cours</a>
+                    <a href="#">Evenements</a>
+                    <a href="#">A propos</a>
+                    <a href="#">CGU</a>
+                    <a href="connexion.html" target="_blank">Connexion</a>
+                    <a href="#" class="btn-inscription">Inscription</a>
+                </div>
+
+                <div class="nav-menue">
+                    <span class="bars bar-haut"></span>
+                    <span class="bars bar-mi"></span>
+                    <span class="bars bar-bas"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+
+       <div class="inscription">
+
+        <div class="inscription-reussi">
+            <h2>Felicitation ! <br>Inscription bien réussi ✅<br>Vous pouvez connecter maintenant</h2>
+            <button>X</button>
+            <a href="connexion.html" target="_blank">Connexion</a>
+        </div>
+
+        <form id="form-inscription">
+            <h2>Inscription</h2>
+
+            <div class="myInputs">
+                <input type="text" minlength="3" maxlength="18" name="name" id="name" placeholder="Entrez votre nom complet" required>
+                <p class="messuser" style="display: none;"></p>
+                <input type="email" name="mail" id="mail" placeholder="Entrez votre email" required>
+                <p class="messemail" style="display: none;"></p>
+                <input type="password" name="pass" id="pass" placeholder="Entrez votre mot de passe" required>
+                <input type="password"  name="passConfirm" id="passConfirm" placeholder="Confirmez votre mot de passe" required>
+                <p class="message"></p>
+            </div>
+
+            <div class="div-passe">
+                <p class="links">
+                    <a href="connexion.html" target="_blank">Vous avez un compte ? Connectez</a>
+                </p>
+            </div>
+            <div class="mesBtns">
+                <input type="submit" value="S'inscrir">
+            </div>
+        </form>
+       </div>
+    </div>
+
+
+    <script src="../JS/incription.js"></script>
+    <script src="../JS/menu.js"></script>
+    <script src="../JS/load.js"></script>
+</body>
+</html>

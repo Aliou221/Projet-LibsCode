@@ -1,0 +1,181 @@
+.connexion,.inscription{
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    margin-block: 72px;
+    justify-content: center;
+    align-items: center;
+}
+
+.messemail,.messpass,.messuser{
+    display: none;
+    color: red;
+    text-align: center;
+    font-weight: 500;
+}
+
+@keyframes scale{
+    from{
+        transform: translate(-50%,-100%);
+        opacity: 0;
+    }to{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+}
+
+.inscription-reussi{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    background-color: rgba(255,255,255,0.8);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.08);
+    animation: scale 1s ease forwards;
+    display: none;
+    
+    button{
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        font-weight: 400;
+        border-radius: 5px;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        background: var(--bg-secondary);
+        padding: 13px 25px;
+        border-radius: 10px;
+       
+
+        &:hover{
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+            transition: .3s ease;
+        }
+    }
+}
+
+
+form{
+    max-width: 500px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.08);
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+
+    h2{
+        padding: 20px 0;
+        font-weight: 700;
+        font-size: 30px;
+    }
+}
+
+
+
+.myInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+        padding: 13px 20px;
+        border: 2px solid #000;
+        border-radius: 20px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 16px;
+
+        &::placeholder{
+            color: #000;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+    }
+}
+
+.div-passe{
+   padding: 20px 0;
+
+   p.links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:nth-child(1){
+            color: var(--bg-secondary);
+        }
+
+        a:nth-child(2){
+            color: var(--bg-primary);
+        }
+
+
+   }
+}
+
+.mesBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.mesBtns input[type="submit"],
+.mesBtns input[type="reset"]{
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    max-width: 150px;
+    width: 100%;
+}
+
+@media (max-width:445px){
+    .mesBtns input[type="submit"], .mesBtns input[type="reset"]{
+        max-width: 100%;
+    }
+}
+
+.mesBtns input[type="reset"]{
+    background-color: var(--btn-reset);
+}
+
+.mesBtns input[type="submit"]{
+    background-color: var(--bg-secondary);
+}
