@@ -34,9 +34,6 @@ myForm.addEventListener('submit', (e)=>{
             if(
                 mailConnect.value === recuperer[ele].email && 
                 passConnect.value === recuperer[ele].password){
-                
-                //Apres avoirs verifier si les infos entrer sont correcte on fait une alert pour montrer a l'utilisateur que tout se passe bien
-                alert("connection reussi !");
 
                 //ici on ajoute les infos de connexion dans notre tableau 
 
@@ -127,5 +124,3 @@ let getDonnee = function(){
 }
 
 getDonnee();
-
-
