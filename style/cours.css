@@ -238,6 +238,23 @@ a.btn-inscription{
     font-size: clamp(15px , 8vw , 18px);
 }
 
+.profile{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile img{
+    height: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* .imgs {
     max-height: 50px !important;
 } */
