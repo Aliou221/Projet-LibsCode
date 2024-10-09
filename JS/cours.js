@@ -53,7 +53,7 @@ changeProfile.addEventListener('change' , ()=>{
 // Récupérer et définir l'image de profil de l'utilisateur au chargement
 function setUserProfile() {
     let userData = donnee.find(user => user.username === compare.username);
-    console.log(userData)
+        
     if (userData) {
         imgProfile.src = userData.img || "../img/user.png"; // Utiliser l'image stockée ou l'image par défaut
     } else {
